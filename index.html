@@ -1,0 +1,582 @@
+﻿<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Законодавча база</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #f4f5f7;
+            --surface: #ffffff;
+            --surface2: #f9fafb;
+            --border: #e5e7eb;
+            --border2: #d1d5db;
+            --accent: #1d4ed8;
+            --accent-light: #eff6ff;
+            --text: #111827;
+            --text-muted: #6b7280;
+            --text-dim: #9ca3af;
+            --r-color: #15803d;
+            --r-bg: #f0fdf4;
+            --r-border: #86efac;
+            --f-color: #1d4ed8;
+            --f-bg: #eff6ff;
+            --f-border: #93c5fd;
+            --j-color: #9333ea;
+            --j-bg: #faf5ff;
+            --j-border: #d8b4fe;
+            --danger: #dc2626;
+            --danger-bg: #fef2f2;
+            --warn: #d97706;
+            --warn-bg: #fffbeb;
+            --success: #15803d;
+            --success-bg: #f0fdf4;
+            --shadow: 0 1px 3px rgba(0,0,0,0.08);
+            --radius: 10px;
+        }
+
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+            font-family: 'Inter', sans-serif;
+            font-size: 14px;
+            min-height: 100vh;
+        }
+
+        header {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            padding: 10px 16px 12px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: var(--shadow);
+        }
+
+        .header-top {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 10px;
+        }
+
+        .logo {
+            width: 32px;
+            height: 32px;
+            background: var(--accent);
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 16px;
+            flex-shrink: 0;
+        }
+
+        .header-title {
+            font-size: 16px;
+            font-weight: 600;
+            color: var(--text);
+        }
+
+        .search-wrap { position: relative; }
+
+        .search-icon {
+            position: absolute;
+            left: 11px;
+            top: 50%;
+            transform: translateY(-50%);
+            color: var(--text-muted);
+            font-size: 15px;
+            pointer-events: none;
+        }
+
+        #search-input {
+            width: 100%;
+            background: var(--surface2);
+            border: 1.5px solid var(--border2);
+            border-radius: var(--radius);
+            color: var(--text);
+            font-size: 16px;
+            font-family: 'Inter', sans-serif;
+            padding: 9px 38px 9px 36px;
+            outline: none;
+            transition: border-color 0.15s, box-shadow 0.15s;
+            -webkit-appearance: none;
+        }
+
+        #search-input:focus {
+            border-color: var(--accent);
+            box-shadow: 0 0 0 3px rgba(29,78,216,0.1);
+            background: var(--surface);
+        }
+
+        #search-input::placeholder { color: var(--text-dim); }
+
+        .clear-btn {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: var(--border);
+            border: none;
+            border-radius: 50%;
+            color: var(--text-muted);
+            cursor: pointer;
+            width: 22px;
+            height: 22px;
+            font-size: 12px;
+            display: none;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .clear-btn.visible { display: flex; }
+
+        .tabs {
+            background: var(--surface);
+            border-bottom: 1px solid var(--border);
+            display: flex;
+            padding: 0 12px;
+            overflow-x: auto;
+            scrollbar-width: none;
+        }
+        .tabs::-webkit-scrollbar { display: none; }
+
+        .tab-btn {
+            background: none;
+            border: none;
+            border-bottom: 2px solid transparent;
+            color: var(--text-muted);
+            cursor: pointer;
+            font-family: 'Inter', sans-serif;
+            font-size: 13px;
+            font-weight: 500;
+            padding: 10px 14px;
+            transition: all 0.15s;
+            white-space: nowrap;
+        }
+
+        .tab-btn.active { color: var(--accent); border-bottom-color: var(--accent); }
+
+
+
+        main {
+            max-width: 860px;
+            margin: 0 auto;
+            padding: 10px 10px 80px;
+        }
+
+        .results-info {
+            color: var(--text-muted);
+            font-size: 12px;
+            padding: 4px 4px 6px;
+        }
+
+        .section-block { margin-bottom: 4px; }
+
+        .section-header {
+            align-items: center;
+            cursor: pointer;
+            display: flex;
+            gap: 8px;
+            padding: 7px 4px;
+            user-select: none;
+        }
+
+        .section-title {
+            color: var(--text-muted);
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.5px;
+            text-transform: uppercase;
+            flex: 1;
+        }
+
+        .section-count {
+            background: var(--border);
+            border-radius: 10px;
+            color: var(--text-muted);
+            font-size: 11px;
+            padding: 1px 7px;
+        }
+
+        .section-chevron {
+            color: var(--text-dim);
+            font-size: 10px;
+            transition: transform 0.2s;
+        }
+
+        .section-header.collapsed .section-chevron { transform: rotate(-90deg); }
+
+        .article-card {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            margin-bottom: 4px;
+            box-shadow: var(--shadow);
+            overflow: hidden;
+        }
+
+        .card-header {
+            align-items: flex-start;
+            cursor: pointer;
+            display: flex;
+            gap: 8px;
+            padding: 10px 12px;
+            -webkit-tap-highlight-color: transparent;
+        }
+
+        .article-number {
+            background: var(--accent-light);
+            border-radius: 5px;
+            color: var(--accent);
+            font-family: 'JetBrains Mono', monospace;
+            font-size: 11px;
+            font-weight: 500;
+            padding: 2px 6px;
+            white-space: nowrap;
+            flex-shrink: 0;
+            margin-top: 1px;
+        }
+
+        .card-title {
+            color: var(--text);
+            font-size: 14px;
+            font-weight: 500;
+            line-height: 1.45;
+            flex: 1;
+        }
+
+        .card-chevron {
+            color: var(--text-dim);
+            font-size: 10px;
+            transition: transform 0.2s;
+            flex-shrink: 0;
+            margin-top: 4px;
+        }
+
+        .article-card.open .card-chevron { transform: rotate(180deg); }
+
+        .applicable-badges {
+            display: flex;
+            gap: 4px;
+            padding: 0 12px 8px;
+        }
+
+        .badge {
+            border-radius: 4px;
+            font-size: 10px;
+            font-weight: 600;
+            padding: 1px 6px;
+        }
+
+        .badge-R { background: var(--r-bg); color: var(--r-color); border: 1px solid var(--r-border); }
+        .badge-F { background: var(--f-bg); color: var(--f-color); border: 1px solid var(--f-border); }
+        .badge-J { background: var(--j-bg); color: var(--j-color); border: 1px solid var(--j-border); }
+
+        .card-body {
+            border-top: 1px solid var(--border);
+            display: none;
+            padding: 10px 12px 12px;
+        }
+
+        .article-card.open .card-body { display: block; }
+
+        .description {
+            color: #374151;
+            font-size: 13px;
+            line-height: 1.65;
+            margin-bottom: 10px;
+        }
+
+        .search-level {
+            align-items: center;
+            display: flex;
+            gap: 6px;
+            margin-bottom: 8px;
+        }
+
+        .level-label { color: var(--text-muted); font-size: 11px; font-weight: 500; }
+        .level-dots { display: flex; gap: 3px; }
+
+        .level-dot { border-radius: 50%; height: 8px; width: 8px; background: var(--border2); }
+        .level-dot.l1 { background: #22c55e; }
+        .level-dot.l2 { background: #84cc16; }
+        .level-dot.l3 { background: #eab308; }
+        .level-dot.l4 { background: #f97316; }
+        .level-dot.l5 { background: #ef4444; }
+
+        .penalties { display: flex; flex-wrap: wrap; gap: 5px; }
+
+        .penalty-tag {
+            align-items: center;
+            border-radius: 6px;
+            display: flex;
+            font-size: 12px;
+            font-weight: 500;
+            gap: 4px;
+            padding: 4px 9px;
+        }
+
+        .p-bail     { background: var(--success-bg); color: var(--success); border: 1px solid var(--r-border); }
+        .p-record   { background: var(--danger-bg); color: var(--danger); border: 1px solid #fca5a5; }
+        .p-license  { background: var(--warn-bg); color: var(--warn); border: 1px solid #fcd34d; }
+        .p-fine     { background: #fffbeb; color: #92400e; border: 1px solid #fde68a; }
+
+        .tab-panel { display: none; }
+        .tab-panel.active { display: block; }
+
+        .empty-state {
+            background: var(--surface);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            text-align: center;
+            padding: 40px 20px;
+            color: var(--text-muted);
+            margin-top: 8px;
+        }
+
+        .empty-icon { font-size: 28px; margin-bottom: 6px; }
+
+        .loading { color: var(--text-muted); font-size: 13px; padding: 40px; text-align: center; }
+
+        mark { background: #fef9c3; color: #78350f; border-radius: 2px; padding: 0 1px; }
+
+        @media (max-width: 480px) {
+            .card-title { font-size: 13px; }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="header-top">
+        <div class="logo">⚖️</div>
+        <span class="header-title">Законодавча база</span>
+    </div>
+    <div class="search-wrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="search-input"
+               placeholder="Пошук статті, ключового слова..."
+               autocomplete="off" autocorrect="off"
+               autocapitalize="off" spellcheck="false">
+        <button class="clear-btn" id="clear-btn" onclick="clearSearch()">✕</button>
+    </div>
+</header>
+
+<div class="tabs" id="tabs">
+    <button class="tab-btn active" data-tab="criminal">Кримінальний кодекс</button>
+    <button class="tab-btn" data-tab="administrative">Адміністративний кодекс</button>
+</div>
+
+
+
+<main>
+    <div id="tab-criminal" class="tab-panel active">
+        <div class="loading">Завантаження...</div>
+    </div>
+    <div id="tab-administrative" class="tab-panel">
+        <div class="loading">Завантаження...</div>
+    </div>
+</main>
+
+<script>
+let criminalData = null;
+let administrativeData = null;
+let currentTab = 'criminal';
+let currentFilter = 'all';
+let searchQuery = '';
+let debounceTimer = null;
+
+async function loadData() {
+    try {
+        const [cr, ad] = await Promise.all([
+            fetch('./criminal_code.json'),
+            fetch('./administrative_code.json')
+        ]);
+        criminalData = await cr.json();
+        administrativeData = await ad.json();
+        renderAll();
+    } catch(e) {
+        document.getElementById('tab-criminal').innerHTML = '<div class="empty-state">Помилка завантаження JSON файлів</div>';
+        document.getElementById('tab-administrative').innerHTML = '<div class="empty-state">Помилка завантаження JSON файлів</div>';
+    }
+}
+
+function getAllArticles(data) {
+    const res = [];
+    if (!data?.sections) return res;
+    data.sections.forEach(s => {
+        const arr = s.articles || s.additional_articles || [];
+        arr.forEach(a => res.push({ article: a, section: s }));
+    });
+    return res;
+}
+
+function matches(article, section, q) {
+    if (!q) return true;
+    const s = q.toLowerCase();
+    return !!(
+        article.article_number?.toString().includes(s) ||
+        article.title?.toLowerCase().includes(s) ||
+        article.description?.toLowerCase().includes(s) ||
+        article.explanation?.toLowerCase().includes(s) ||
+        section.section_title?.toLowerCase().includes(s) ||
+        article.keywords?.some(k => k.toLowerCase().includes(s))
+    );
+}
+
+function hasFilter(article, f) {
+    if (f === 'all') return true;
+    return article.applicable_to?.includes(f);
+}
+
+function hl(text, q) {
+    if (!q || !text) return text || '';
+    const esc = q.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
+    return text.replace(new RegExp(`(${esc})`, 'gi'), '<mark>$1</mark>');
+}
+
+function renderDots(level) {
+    if (!level) return '';
+    let d = '';
+    for (let i = 1; i <= 5; i++) d += `<div class="level-dot${i <= level ? ' l' + level : ''}"></div>`;
+    return `<div class="search-level"><span class="level-label">Рівень розшуку:</span><div class="level-dots">${d}</div></div>`;
+}
+
+function renderPenaltiesCriminal(p) {
+    if (!p) return '';
+    let h = '<div class="penalties">';
+    if (p.bail_possible)      h += '<span class="penalty-tag p-bail">✓ Застава можлива</span>';
+    if (p.criminal_record)    h += '<span class="penalty-tag p-record">⚠ Судимість</span>';
+    if (p.license_revocation) h += '<span class="penalty-tag p-license">🚫 Позбавлення ліцензії</span>';
+    return h + '</div>';
+}
+
+function renderPenaltiesAdmin(p) {
+    if (!p?.fine) return '';
+    return `<div class="penalties"><span class="penalty-tag p-fine">💰 ${p.fine.toLocaleString()} ${p.currency || '$'}</span></div>`;
+}
+
+function renderBadges(applicable_to) {
+    if (!applicable_to?.length) return '';
+    return '<div class="applicable-badges">' +
+        applicable_to.map(t => `<span class="badge badge-${t}">${t}</span>`).join('') +
+        '</div>';
+}
+
+function cardHtml(article, section, q, isCriminal) {
+    const desc = article.description || article.explanation || '';
+    return `
+        <div class="article-card" onclick="toggleCard(this)">
+            <div class="card-header">
+                <span class="article-number">${article.article_number}</span>
+                <span class="card-title">${hl(article.title, q)}</span>
+                <span class="card-chevron">▼</span>
+            </div>
+            ${renderBadges(article.applicable_to)}
+            <div class="card-body">
+                ${desc ? `<div class="description">${hl(desc, q)}</div>` : ''}
+                ${isCriminal ? renderDots(article.search_level) : ''}
+                ${isCriminal ? renderPenaltiesCriminal(article.penalties) : renderPenaltiesAdmin(article.penalties)}
+            </div>
+        </div>`;
+}
+
+function groupBy(results) {
+    const map = new Map();
+    results.forEach(({ article, section }) => {
+        const key = section.section_id + '_' + (section.section_title || '');
+        if (!map.has(key)) map.set(key, { section, articles: [] });
+        map.get(key).articles.push(article);
+    });
+    return map;
+}
+
+function renderTab(containerId, data, isCriminal, filter) {
+    const container = document.getElementById(containerId);
+    if (!data) return;
+
+    const all = getAllArticles(data);
+    const filtered = all.filter(({ article, section }) =>
+        matches(article, section, searchQuery) && (isCriminal ? hasFilter(article, filter) : true)
+    );
+
+    if (!filtered.length) {
+        container.innerHTML = `<div class="empty-state"><div class="empty-icon">🔍</div><div>Нічого не знайдено</div></div>`;
+        return;
+    }
+
+    const grouped = groupBy(filtered);
+    let html = `<div class="results-info">Знайдено: ${filtered.length} ${filtered.length === 1 ? 'стаття' : 'статей'}</div>`;
+
+    grouped.forEach(({ section, articles }) => {
+        const sid = 'sec-' + Math.random().toString(36).substr(2, 6);
+        html += `
+            <div class="section-block">
+                <div class="section-header" onclick="toggleSection(this,'${sid}')">
+                    <span class="section-title">${section.section_title || 'Додаткові статті'}</span>
+                    <span class="section-count">${articles.length}</span>
+                    <span class="section-chevron">▼</span>
+                </div>
+                <div id="${sid}">
+                    ${articles.map(a => cardHtml(a, section, searchQuery, isCriminal)).join('')}
+                </div>
+            </div>`;
+    });
+
+    container.innerHTML = html;
+}
+
+function renderAll() {
+    renderTab('tab-criminal', criminalData, true, currentFilter);
+    renderTab('tab-administrative', administrativeData, false, 'all');
+}
+
+function toggleCard(el) { el.classList.toggle('open'); }
+
+function toggleSection(header, id) {
+    const body = document.getElementById(id);
+    if (!body) return;
+    const hidden = body.style.display === 'none';
+    body.style.display = hidden ? 'block' : 'none';
+    header.classList.toggle('collapsed', !hidden);
+}
+
+document.getElementById('search-input').addEventListener('input', function () {
+    searchQuery = this.value.trim();
+    document.getElementById('clear-btn').classList.toggle('visible', searchQuery.length > 0);
+    clearTimeout(debounceTimer);
+    debounceTimer = setTimeout(renderAll, 200);
+});
+
+function clearSearch() {
+    const inp = document.getElementById('search-input');
+    inp.value = '';
+    searchQuery = '';
+    document.getElementById('clear-btn').classList.remove('visible');
+    inp.focus();
+    renderAll();
+}
+
+document.getElementById('tabs').addEventListener('click', e => {
+    const btn = e.target.closest('.tab-btn');
+    if (!btn) return;
+    currentTab = btn.dataset.tab;
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.tab-panel').forEach(p => p.classList.remove('active'));
+    document.getElementById('tab-' + currentTab).classList.add('active');
+
+});
+
+
+
+loadData();
+</script>
+</body>
+</html>
