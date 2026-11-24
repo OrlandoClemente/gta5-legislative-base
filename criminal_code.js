@@ -18,8 +18,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    7,
-                    12
+                    6,
+                    9
                   ]
                 }
               ],
@@ -35,8 +35,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    3,
-                    5
+                    2,
+                    4
                   ]
                 },
                 {
@@ -59,8 +59,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    5,
-                    10
+                    4,
+                    6
                   ]
                 }
               ],
@@ -74,8 +74,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    10,
-                    15
+                    7,
+                    9
                   ]
                 }
               ],
@@ -96,8 +96,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    10,
-                    15
+                    7,
+                    9
                   ]
                 }
               ],
@@ -118,8 +118,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    8,
-                    15
+                    6,
+                    9
                   ]
                 }
               ],
@@ -141,8 +141,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    5,
-                    8
+                    3,
+                    5
                   ]
                 }
               ],
@@ -157,8 +157,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    8,
-                    12
+                    5,
+                    8
                   ]
                 }
               ],
@@ -183,7 +183,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    5
+                    4
                   ],
                   "extra": [
                     "посади 1–2 р. (чорний список 7–14 днів)"
@@ -197,8 +197,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    5,
-                    8
+                    4,
+                    6
                   ]
                 }
               ],
@@ -224,8 +224,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    7,
-                    12
+                    6,
+                    8
                   ]
                 }
               ],
@@ -240,8 +240,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    10,
-                    15
+                    7,
+                    9
                   ]
                 }
               ],
@@ -263,7 +263,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    5
+                    4
                   ]
                 }
               ]
@@ -274,8 +274,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    5,
-                    8
+                    4,
+                    6
                   ]
                 }
               ],
@@ -295,8 +295,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    4,
-                    7
+                    3,
+                    5
                   ]
                 }
               ],
@@ -310,8 +310,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    7,
-                    10
+                    4,
+                    6
                   ]
                 }
               ],
@@ -400,8 +400,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    3,
-                    6
+                    2,
+                    4
                   ]
                 }
               ]
@@ -412,8 +412,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    5,
-                    8
+                    4,
+                    6
                   ],
                   "extra": [
                     "посади 2 р. (чорний список 14 днів)"
@@ -481,7 +481,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    5
+                    4
                   ],
                   "extra": [
                     "посади в охороні здоров’я 1–2 р. (чорний список 7–14 днів)"
@@ -501,8 +501,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    3,
-                    5
+                    2,
+                    4
                   ],
                   "extra": [
                     "медична чи наукова діяльність 2 р. (чорний список 14 днів)"
@@ -529,7 +529,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    4
+                    3
                   ]
                 }
               ]
@@ -540,8 +540,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    5,
-                    8
+                    4,
+                    6
                   ]
                 }
               ],
@@ -556,8 +556,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    8,
-                    12
+                    6,
+                    8
                   ]
                 }
               ],
@@ -579,7 +579,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    4
+                    3
                   ]
                 }
               ]
@@ -590,8 +590,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    4,
-                    7
+                    3,
+                    5
                   ]
                 }
               ],
@@ -659,7 +659,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    4
+                    3
                   ]
                 }
               ],
@@ -765,7 +765,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    5
+                    4
                   ],
                   "extra": [
                     "посади 1–2 р. (чорний список 7–14 днів)"
@@ -836,7 +836,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    4
+                    3
                   ]
                 }
               ]
@@ -848,7 +848,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     3,
-                    6
+                    5
                   ]
                 }
               ],
@@ -876,7 +876,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    4
+                    3
                   ]
                 }
               ]
@@ -887,8 +887,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    4,
-                    6
+                    3,
+                    5
                   ]
                 }
               ]
@@ -899,8 +899,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    5,
-                    8
+                    4,
+                    6
                   ]
                 }
               ],
@@ -920,8 +920,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    5,
-                    8
+                    3,
+                    5
                   ]
                 }
               ],
@@ -936,8 +936,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    7,
-                    10
+                    4,
+                    6
                   ]
                 }
               ],
@@ -952,8 +952,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    8,
-                    12
+                    6,
+                    8
                   ]
                 }
               ],
@@ -976,7 +976,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    5
+                    4
                   ]
                 }
               ]
@@ -987,8 +987,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    5,
-                    8
+                    4,
+                    6
                   ]
                 }
               ]
@@ -1024,8 +1024,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    3,
-                    6
+                    2,
+                    4
                   ]
                 }
               ],
@@ -1064,8 +1064,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    5,
-                    10
+                    4,
+                    6
                   ]
                 }
               ]
@@ -1086,7 +1086,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    4
+                    3
                   ]
                 }
               ],
@@ -1100,8 +1100,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    3,
-                    5
+                    2,
+                    4
                   ]
                 }
               ],
@@ -1122,8 +1122,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    4,
-                    7
+                    3,
+                    5
                   ]
                 }
               ]
@@ -1147,8 +1147,8 @@ window.LAW_BOOKS.push({
                 },
                 {
                   "prison": [
-                    3,
-                    6
+                    2,
+                    4
                   ],
                   "extra": [
                     "посади 1 р. (чорний список 7 днів)"
@@ -1162,8 +1162,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    7,
-                    12
+                    4,
+                    6
                   ]
                 }
               ],
@@ -1214,7 +1214,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    4
+                    3
                   ]
                 }
               ],
@@ -1228,8 +1228,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    4,
-                    7
+                    3,
+                    5
                   ]
                 }
               ],
@@ -1255,8 +1255,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    8,
-                    12
+                    6,
+                    8
                   ]
                 }
               ],
@@ -1271,8 +1271,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    12,
-                    15
+                    7,
+                    9
                   ]
                 }
               ],
@@ -1312,7 +1312,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    5
+                    4
                   ]
                 }
               ],
@@ -1327,8 +1327,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    4,
-                    7
+                    3,
+                    5
                   ]
                 }
               ],
@@ -1349,7 +1349,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     3,
-                    8
+                    6
                   ]
                 }
               ],
@@ -1369,8 +1369,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    5,
-                    8
+                    4,
+                    6
                   ]
                 }
               ],
@@ -1385,7 +1385,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    5
+                    4
                   ]
                 }
               ]
@@ -1424,8 +1424,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    2,
-                    4
+                    1,
+                    3
                   ]
                 }
               ]
@@ -1436,8 +1436,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    3,
-                    6
+                    2,
+                    4
                   ]
                 }
               ],
@@ -1481,7 +1481,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     3,
-                    6
+                    5
                   ]
                 }
               ],
@@ -1508,7 +1508,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    5
+                    4
                   ]
                 }
               ],
@@ -1606,8 +1606,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    10,
-                    15
+                    7,
+                    9
                   ]
                 }
               ],
@@ -1708,7 +1708,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    5
+                    4
                   ],
                   "extra": [
                     "посади 1 р. (чорний список 7 днів)"
@@ -1729,7 +1729,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    5
+                    4
                   ],
                   "extra": [
                     "посади 1 р. (чорний список 7 днів)"
@@ -1743,8 +1743,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    5,
-                    8
+                    4,
+                    6
                   ],
                   "extra": [
                     "державні посади 2 р. (чорний список 14 днів)"
@@ -1765,7 +1765,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     3,
-                    6
+                    5
                   ],
                   "extra": [
                     "керівні посади 2 р. (14 днів)"
@@ -1780,7 +1780,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    5
+                    4
                   ]
                 }
               ]
@@ -1791,8 +1791,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    7,
-                    12
+                    6,
+                    8
                   ]
                 }
               ],
@@ -1874,8 +1874,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    3,
-                    6
+                    2,
+                    4
                   ]
                 }
               ],
@@ -1890,8 +1890,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    5,
-                    10
+                    4,
+                    6
                   ]
                 }
               ],
@@ -1945,7 +1945,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    5
+                    4
                   ]
                 }
               ]
@@ -1956,8 +1956,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    5,
-                    8
+                    4,
+                    6
                   ],
                   "extra": [
                     "посади в слідстві 2 р. (чорний список 14 днів)"
@@ -2021,8 +2021,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    3,
-                    6
+                    2,
+                    4
                   ],
                   "extra": [
                     "посада судді 2 р. (чорний список 14 днів)"
@@ -2036,8 +2036,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    5,
-                    8
+                    4,
+                    6
                   ],
                   "extra": [
                     "посада судді 3 р. (чорний список 30 днів)"
@@ -2065,7 +2065,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    5
+                    4
                   ]
                 }
               ]
@@ -2076,8 +2076,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    4,
-                    7
+                    3,
+                    5
                   ]
                 }
               ]
@@ -2173,7 +2173,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    5
+                    4
                   ]
                 }
               ]
@@ -2218,7 +2218,7 @@ window.LAW_BOOKS.push({
           "number": "393",
           "title": "Втеча з місця позбавлення волі або з-під варти",
           "notes": [
-            "Строк додається до невідбутого, максимум за статтею 51 — 150 хвилин. Сприяння втечі — співучасть, стаття 27."
+            "Строк додається до невідбутого, максимум за статтею 51 — 90 хвилин. Сприяння втечі — співучасть, стаття 27."
           ],
           "parts": [
             {
@@ -2228,7 +2228,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    4
+                    3
                   ]
                 }
               ]
@@ -2239,8 +2239,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    4,
-                    7
+                    3,
+                    5
                   ]
                 }
               ],
@@ -2282,8 +2282,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    4,
-                    7
+                    3,
+                    5
                   ]
                 }
               ]
@@ -2301,7 +2301,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     2,
-                    5
+                    4
                   ]
                 }
               ]
@@ -2331,7 +2331,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     3,
-                    6
+                    5
                   ]
                 }
               ]
@@ -2349,7 +2349,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     3,
-                    6
+                    5
                   ]
                 }
               ]
@@ -2360,8 +2360,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    5,
-                    10
+                    4,
+                    6
                   ]
                 }
               ],
@@ -2402,8 +2402,8 @@ window.LAW_BOOKS.push({
               "options": [
                 {
                   "prison": [
-                    5,
-                    8
+                    4,
+                    6
                   ]
                 }
               ],

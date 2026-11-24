@@ -489,7 +489,7 @@ window.LAW_BOOKS.push({
                 {
                   "prison": [
                     3,
-                    8
+                    6
                   ]
                 }
               ],
